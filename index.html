@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,44 +7,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/home.css">
     <title>Rock Paper Scissors</title>
 </head>
+
 <body>
-    <main>
-        <section class="main-section">
-            <h1>Rock Paper Scissors</h1>
-        <div class="centered">
-           <ul><strong id="big-rules">Rules of Play</strong>
-                <li>rock beats scissors</li>
-                <li>paper beats rock</li>
-                <li>scissors beat paper</li>
-               
-           </ul>
+    <header>
+        <div class="gutter-right logo">
+            <img src="assets/big-logo.png" />
         </div>
-        <label>
-            <input 
-            name="weapon" 
-            type="radio"
-            value="rock"
-            > <img src="/assets/rock.jpg" alt="rock">
-        </label>
-        <label>
-            <input 
-            name="weapon" 
-            type="radio"
-            value="paper"
-            > <img src="/assets/paper.jpg" alt="paper">
-        </label>
-        <label>
-            <input 
-            name="weapon" 
-            type="radio"
-            value="scissors"
-            > <img src="assets/scissors.jpg" alt="scissors">
-        </label>
-        </section>
+    </header>
+    <main>
+        <h1>Let's play Rock Paper Scissors!</h1>
+        <ul>Rules:
+            <li>Rock beats Scissors</li>
+            <li>Scissors beats Paper</li>
+            <li>Paper beats Rock</li>
+            <br>
+            <br>
+            <br>
+        </ul>
+        <button id="play-button">Rock Paper Scissors Shoot!</button>
+        <section class="throws">
+            <label>
+                <input name="hand" type="radio" value="rock" checked> <img src="./assets/rock.jpg" alt="rock" width="111" height="auto"> 
+            </label>
+            <label>
+                <input name="hand" type="radio" value="rock" checked> <img src="./assets/paper.jpg" alt="rock" width="111" height="auto"> 
+            </label>
+            <label>
+                <input name="hand" type="radio" value="rock" checked> <img src="./assets/scissors.jpg" alt="rock" width="111" height="auto"> 
+            </label>
+            </section>
+
+
+        
+        
+        <div>Total Wins: <span id="total-wins">0</span></div>
+        <div>Total Losses: <span id="total-losses">0</span></div>
+        
+        <p id="show-results"></p>
     </main>
+    <footer>
+        <div class="copy gutter-right">&copy; 2020 Alchemy Code Lab</div>
+    </footer>
 
     <script type="module" src="./app.js"></script>
 </body>
