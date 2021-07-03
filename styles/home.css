@@ -1,1 +1,27 @@
-/* add home page styles here */
+input[type="radio"] {
+    display: none;
+  }
+  
+  img {
+    width: 150px;
+  }
+  
+  input[type="radio"]:checked + img {
+    border: 3px solid grey;
+  }
+  
+  input[type="radio"]:not(:checked) + img:hover {
+    opacity: 50%;
+    cursor: pointer;
+  }
+  
+  .throws {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  
+  ul {
+    list-style: square;
+  }
+  

@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,6 +9,7 @@
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/home.css">
+    
     <title>Rock Paper Scissors</title>
 </head>
 
@@ -25,36 +25,35 @@
             <li>Rock beats Scissors</li>
             <li>Scissors beats Paper</li>
             <li>Paper beats Rock</li>
-            <br>
-            <br>
-            <br>
         </ul>
-        <button id="play-button">Rock Paper Scissors Shoot!</button>
+        
         <section class="throws">
             <label>
-                <input name="hand" type="radio" value="rock" checked> <img src="./assets/rock.jpg" alt="rock" width="111" height="auto"> 
+                <input name="hand" type="radio" value="rock" checked> <img src="./assets/rock.jpg" alt="rock"> 
             </label>
+            
             <label>
-                <input name="hand" type="radio" value="rock" checked> <img src="./assets/paper.jpg" alt="rock" width="111" height="auto"> 
+                <input name="hand" type="radio" value="paper"> <img src="./assets/paper.jpg" alt="paper">
             </label>
+
             <label>
-                <input name="hand" type="radio" value="rock" checked> <img src="./assets/scissors.jpg" alt="rock" width="111" height="auto"> 
+                <input name="hand" type="radio" value="scissors"> <img src="./assets/scissors.jpg" alt="scissors">
             </label>
-            </section>
+        </section>
 
-
-        
+        <p id="show-results"></p>
+        <button id="play-button">Rock Paper Scissors Shoot!</button>
         
         <div>Total Wins: <span id="total-wins">0</span></div>
         <div>Total Losses: <span id="total-losses">0</span></div>
+        <div>Total Draws: <span id="total-draws">0</span></div>
         
-        <p id="show-results"></p>
     </main>
     <footer>
-        <div class="copy gutter-right">&copy; 2020 Alchemy Code Lab</div>
+        <div class="copy gutter-right">&copy; 2021 Alchemy Code Lab</div>
     </footer>
 
-    <script type="module" src="./app.js"></script>
 </body>
+<script type="module" src="./app.js"></script>
 
 </html>
